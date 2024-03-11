@@ -67,11 +67,9 @@ body {
   @keyframes flipToBack {
     from {
       transform: rotateY(0deg);
-      opacity: 1;
     }
     to {
         transform: rotateY(180deg);
-        opacity: 0;
     }
   }
 
@@ -93,11 +91,11 @@ body {
     }
   }
   
-  .flippingToFront {
+  .flippToFront {
     animation: flipToFront 0.7s forwards;
   }
   
-  .flippingToBack {
+  .flippToBack {
     animation: flipToBack 0.7s forwards;
   }
 

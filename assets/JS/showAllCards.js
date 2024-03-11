@@ -9,7 +9,7 @@ const ShowAllCards = {
             imgArray.forEach((image, index) => {
                 
                 let newDomElement = `
-                <div class="card" dataSet="${index + 1}">
+                <div class="card" dataset="${index + 1}">
                 ${image.outerHTML}
                 <img class="backSide" src="./assets/img/backCard.jpg" alt="">
                 </div>
@@ -35,7 +35,7 @@ const ShowAllCards = {
                 const Allfrontsides = document.querySelectorAll('.frontSide');
                 const AllBackSides = document.querySelectorAll('.backSide');
                 Allfrontsides.forEach( (frontSide)=> {
-                    frontSide.classList.add('posAbsolute')
+                    frontSide.classList.add('posAbsolute');
                 })
                 AllBackSides.forEach( (backSide)=> {
                     backSide.style.display = 'block';
