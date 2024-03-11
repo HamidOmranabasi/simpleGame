@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(81, 80, 80);
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#startBtn {
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+#startBtn:hover{
+    background-color: rgb(102, 239, 102);
+    color: beige;
+    cursor: pointer;
+}
+
+#countDown {
+  color: bisque;
+  font-size: 3em;
+
+}
+
+#img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.card img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.backSide {
+  display: none;
+  cursor: pointer;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.posRelative {
+    position: relative;
+} 
+
+  @keyframes flipToFront {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  @keyframes flipToBack {
+    from {
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+    to {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+  }
+
+  @keyframes fadeToZero {
+    from {
+      opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+
+  @keyframes fadeToOne {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .flippingToFront {
+    animation: flipToFront 0.7s forwards;
+  }
+  
+  .flippingToBack {
+    animation: flipToBack 0.7s forwards;
+  }
+
+  .fadeToZero {
+    animation: fadeToZero 0.7s forwards;
+  }
+
+  .fadeToOne {
+    animation: fadeToOne 0.7s forwards;
+  }
+
