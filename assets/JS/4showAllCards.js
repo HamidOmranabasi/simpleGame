@@ -1,4 +1,4 @@
-import {imgContainer, countdownTimer, youWinBox} from './variables.js';
+import {imgContainer, countdownTimer, youWinBox} from './1variables.js';
 const ShowAllCards = {
     setup: function(imgArray) {
 

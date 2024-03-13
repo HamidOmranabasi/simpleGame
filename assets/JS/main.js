@@ -1,15 +1,12 @@
-import { startButton , countdownTimer } from './variables.js';
-import RemoveEffects   from './removeEffects.js';
-import CreateRandImgs  from './randImgs.js';
-import ShowAllCards    from './showAllCards.js';
-import CardClick       from './cardClickConrtol.js';
-
+import { startButton , countdownTimer } from './1variables.js';
+import ResetEffects    from './2resetEffects.js';
+import CreateRandImgs  from './3randImgs.js';
+import ShowAllCards    from './4showAllCards.js';
+import CardClick       from './5cardClickConrtol.js';
 
 document.addEventListener("DOMContentLoaded",  () => {
-    
     startButton.addEventListener('click', async () => {
-
-        RemoveEffects.setup();
+        ResetEffects.setup();
         CreateRandImgs.setup(16);
         const images = CreateRandImgs.getImgArray();
         await ShowAllCards.setup(images);

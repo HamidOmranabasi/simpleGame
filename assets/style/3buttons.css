@@ -1,0 +1,13 @@
+#startBtn {
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+#startBtn:hover{
+    background-color: var(--btn-hover-bg-color);
+    color: var(--btn-hover-color);
+    cursor: pointer;
+}

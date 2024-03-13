@@ -1,6 +1,6 @@
-import ShowFrontside from './showFrontside.js';
-import ShowBackside  from './showBackSide.js';
-import { youWinBox, paredSound, wrongSound, winAllGame } from './variables.js';
+import ShowFrontside from './6showFrontside.js';
+import ShowBackside  from './7showBackSide.js';
+import { youWinBox, paredSound, wrongSound, winAllGame } from './1variables.js';
     
 let remainingCards   = 16;
 let turnedCardsNumbr = 0;
@@ -86,9 +86,6 @@ const CardClick = {
     playSound: function (audioFile) {
         audioFile.play();
     }
-
-
-
 }
 
 export default CardClick;

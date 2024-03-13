@@ -1,6 +1,6 @@
-import { youWinBox, paredSound, wrongSound, winAllGame } from './variables.js';
+import { youWinBox, paredSound, wrongSound, winAllGame } from './1variables.js';
     
-const RemoveEffects = {
+const ResetEffects = {
         setup: function() {
             youWinBox.classList.add('winBefor');
             youWinBox.style = "";
@@ -13,4 +13,4 @@ const RemoveEffects = {
         }
     }
     
-    export default RemoveEffects;
+    export default ResetEffects;

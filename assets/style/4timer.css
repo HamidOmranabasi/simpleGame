@@ -1,0 +1,4 @@
+#countDown {
+    color: var(--countdown-color);
+    font-size: 3em;
+  }

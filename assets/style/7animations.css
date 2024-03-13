@@ -1,0 +1,51 @@
+  @keyframes flipToFront {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  @keyframes flipToBack {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(180deg);
+    }
+  }
+
+  @keyframes fadeToZero {
+    from {
+      opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+
+  @keyframes fadeToOne {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  .flippToFront {
+    animation: flipToFront 0.7s forwards;
+  }
+  
+  .flippToBack {
+    animation: flipToBack 0.7s forwards;
+  }
+
+  .fadeToZero {
+    animation: fadeToZero 0.7s forwards;
+  }
+
+  .fadeToOne {
+    animation: fadeToOne 0.7s forwards;
+  }

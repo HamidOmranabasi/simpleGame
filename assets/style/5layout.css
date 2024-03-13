@@ -1,0 +1,12 @@
+.backSide {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .posAbsolute {
+    position: absolute;
+  }
+  
+  .posRelative {
+      position: relative;
+  }
