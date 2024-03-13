@@ -30,13 +30,14 @@ body {
 }
 
 #img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
+
+
 .card img {
-    margin: 10px;
     width: 200px;
     height: 200px;
 }
@@ -53,7 +54,12 @@ body {
 
 .posRelative {
     position: relative;
-} 
+}
+
+.winBefor {
+  opacity: 0;
+  z-index : -1;
+}
 
   @keyframes flipToFront {
     from {
@@ -90,7 +96,9 @@ body {
         opacity: 1;
     }
   }
-  
+
+
+
   .flippToFront {
     animation: flipToFront 0.7s forwards;
   }
@@ -107,3 +115,52 @@ body {
     animation: fadeToOne 0.7s forwards;
   }
 
+  
+  @media (max-width: 768px) {
+    #img-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card img {
+      width:  60px;
+      height: 60px;
+    }
+
+    #win {
+      transform: translateY(-350px) scale(.5);
+    }
+  }
+
+  @media (min-width: 768px) {
+    #img-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+    }
+    #win {
+      transform: translateY(-500px);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #img-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card img {
+      width: 200px;
+      height: 200px;
+    }
+    #win {
+      transform: translateY(-700px);
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    #img-container {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    #win {
+      transform: translateY(-400px);
+    }
+  }

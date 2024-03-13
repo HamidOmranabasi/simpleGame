@@ -1,9 +1,10 @@
-import {imgContainer, countdownTimer} from './variables.js';
-
+import {imgContainer, countdownTimer, youWinBox} from './variables.js';
 const ShowAllCards = {
     setup: function(imgArray) {
+
         return new Promise((resolve) => {
             let countdownValue = 3;
+            youWinBox.style.opacity = 0;
             countdownTimer.innerHTML = countdownValue;
             imgContainer.innerHTML = "";
             imgArray.forEach((image, index) => {

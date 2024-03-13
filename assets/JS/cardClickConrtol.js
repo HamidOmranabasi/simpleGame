@@ -1,13 +1,11 @@
 import ShowFrontside from './showFrontside.js';
 import ShowBackside  from './showBackSide.js';
-let turnedCardsNumbr = 0;
+import { youWinBox, paredSound, wrongSound, winAllGame } from './variables.js';
+    
 let remainingCards   = 16;
+let turnedCardsNumbr = 0;
 let firstCard  = "";
 let secondCard = "";
-const paredSound = new Audio('./assets/audio/yes.mp3');
-const wrongSound = new Audio('/assets/audio/wrong.mp3');
-const winAllGame = new Audio('/assets/audio/win1.mp3');
-
 
 const CardClick = {
     setup: function() {
@@ -23,6 +21,7 @@ const CardClick = {
                     case 0:
                         turnedCardsNumbr++;
                         firstCard = card;
+                        firstCard.style.pointerEvents = 'none';
                         ShowFrontside.setup(card);
                         break;
                     case 1:
@@ -74,11 +73,13 @@ const CardClick = {
             ShowFrontside.setup(nonZeroDatasetElements[0].parentNode);
             ShowFrontside.setup(nonZeroDatasetElements[1].parentNode);
             this.disablePairCards(nonZeroDatasetElements[0].parentNode, nonZeroDatasetElements[1].parentNode);
-            this.playSound(winAllGame);
         }
-
-        if (remainingCards == 2 || remainingCards == 0) {
+        
+        if (remainingCards == 0) {
+            youWinBox.style.opacity = 1;
+            youWinBox.style.zIndex  = 2;
             this.playSound(winAllGame);
+            remainingCards = 16;
         }
     },
 

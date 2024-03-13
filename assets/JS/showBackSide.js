@@ -4,6 +4,7 @@ const ShowBackside = {
         const frontSide = card.querySelector('img.frontSide');
         const backSide  = card.querySelector('img.backSide');
 
+        card.style.pointerEvents = 'unset';
         frontSide.classList.add('posAbsolute');
 
         backSide.style.display = 'block';
