@@ -1,3 +1,6 @@
+// Importing required elements and sounds from variables file
+import {defaultImages} from './1variables.js';
+
 // Define an object to manage random image creation
 const CreateRandImgs = {
     imgArray: [], // Array to hold the created images
@@ -10,10 +13,15 @@ const CreateRandImgs = {
         try {
             // Generate unique random image addresses
             while (addressesSet.size < NumberOfPhotos / 2) {
-                const newAddress = `https://picsum.photos/200/200?random=${Math.random()}`;
-                if (!addressesSet.has(newAddress)) {
-                    addressesSet.add(newAddress);
+                let newAddress;
+                if (navigator.onLine) {
+                    // If online, use picsum.photos service
+                    newAddress = `https://picsum.photos/200/200?random=${Math.random()}`;
+                } else {
+                    // If offline, use default images
+                    newAddress = defaultImages[addressesSet.size];
                 }
+                addressesSet.add(newAddress);
             }
 
             const addresses = Array.from(addressesSet);
