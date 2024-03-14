@@ -1,12 +1,15 @@
+/* Styling for the back side of the card */
 .backSide {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .posAbsolute {
-    position: absolute;
-  }
-  
-  .posRelative {
-      position: relative;
-  }
+  display: none;    /* Hide the back side of the card by default */
+  cursor: pointer;  /* Set the cursor to a pointer */
+}
+
+/* Styling for elements with class posAbsolute */
+.posAbsolute {
+  position: absolute; /* Set the position to absolute */
+}
+
+/* Styling for elements with class posRelative */
+.posRelative {
+  position: relative; /* Set the position to relative */
+}

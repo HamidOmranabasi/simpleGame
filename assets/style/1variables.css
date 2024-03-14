@@ -1,6 +1,7 @@
+/* Define custom CSS variables for color scheme */
 :root {
-    --primary-bg-color: rgb(81, 80, 80);
-    --btn-hover-bg-color: rgb(102, 239, 102);
-    --btn-hover-color: beige;
-    --countdown-color: bisque;
+    --primary-bg-color:   #513232;  /* Background color for main elements */
+    --btn-hover-bg-color: #66EF66;  /* Background color for buttons on hover */
+    --btn-hover-color:    #F5F5DC;  /* Text color for buttons on hover */
+    --countdown-color:    #FFE4C4;  /* Text color for countdown timer */
 }

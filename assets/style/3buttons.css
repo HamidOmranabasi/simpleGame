@@ -1,13 +1,15 @@
+/* Styling for the start button */
 #startBtn {
-    width: 250px;
-    margin: auto;
-    padding: 10px;
-    font-size: 1.5rem;
-    border-radius: 5px;
+    width: 250px;       /* Set the width of the button */
+    margin: auto;       /* Center the button horizontally */
+    padding: 10px;      /* Add padding inside the button */
+    font-size: 1.5rem;  /* Set the font size of the button text */
+    border-radius: 5px; /* Add rounded corners to the button */
 }
 
-#startBtn:hover{
-    background-color: var(--btn-hover-bg-color);
-    color: var(--btn-hover-color);
-    cursor: pointer;
+/* Styling for the hover state of the start button */
+#startBtn:hover {
+    background-color: var(--btn-hover-bg-color); /* Change background color on hover using a CSS variable */
+    color: var(--btn-hover-color);               /* Change text color on hover using a CSS variable */
+    cursor: pointer;                             /* Change cursor to pointer on hover */
 }

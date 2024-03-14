@@ -1,4 +1,5 @@
+/* CSS class winBefor */
 .winBefor {
-    opacity: 0;
-    z-index : -1;
-  }
+  opacity:  0; /* Sets opacity to 0 */
+  z-index: -1; /* Sets z-index to -1 */
+}

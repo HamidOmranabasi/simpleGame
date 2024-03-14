@@ -1,51 +1,59 @@
-  @keyframes flipToFront {
-    from {
-      transform: rotateY(180deg);
-    }
-    to {
-      transform: rotateY(0deg);
-    }
+/* Keyframes for flipping to front */
+@keyframes flipToFront {
+  from {
+      transform: rotateY(180deg); /* Start with a rotated view (back side) */
   }
-  
-  @keyframes flipToBack {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(180deg);
-    }
+  to {
+      transform: rotateY(0deg); /* End with a non-rotated view (front side) */
   }
+}
 
-  @keyframes fadeToZero {
-    from {
-      opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+/* Keyframes for flipping to back */
+@keyframes flipToBack {
+  from {
+      transform: rotateY(0deg); /* Start with a non-rotated view (front side) */
   }
+  to {
+      transform: rotateY(180deg); /* End with a rotated view (back side) */
+  }
+}
 
-  @keyframes fadeToOne {
-    from {
-      opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Keyframes for fading to zero opacity */
+@keyframes fadeToZero {
+  from {
+      opacity: 1; /* Start with full opacity */
   }
+  to {
+      opacity: 0; /* End with zero opacity */
+  }
+}
 
-  .flippToFront {
-    animation: flipToFront 0.7s forwards;
+/* Keyframes for fading to one opacity */
+@keyframes fadeToOne {
+  from {
+      opacity: 0; /* Start with zero opacity */
   }
-  
-  .flippToBack {
-    animation: flipToBack 0.7s forwards;
+  to {
+      opacity: 1; /* End with full opacity */
   }
+}
 
-  .fadeToZero {
-    animation: fadeToZero 0.7s forwards;
-  }
+/* Animation for flipping to front */
+.flippToFront {
+  animation: flipToFront 0.7s forwards; /* Apply flipToFront animation */
+}
 
-  .fadeToOne {
-    animation: fadeToOne 0.7s forwards;
-  }
+/* Animation for flipping to back */
+.flippToBack {
+  animation: flipToBack 0.7s forwards; /* Apply flipToBack animation */
+}
+
+/* Animation for fading to zero opacity */
+.fadeToZero {
+  animation: fadeToZero 0.7s forwards; /* Apply fadeToZero animation */
+}
+
+/* Animation for fading to one opacity */
+.fadeToOne {
+  animation: fadeToOne 0.7s forwards; /* Apply fadeToOne animation */
+}

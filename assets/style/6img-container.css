@@ -1,5 +1,6 @@
+/* Styling for the image container */
 #img-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
+  display: grid;                                               /* Use grid layout for the container */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define grid columns with auto-fit and minmax */
+  gap: 20px;                                                   /* Add spacing between grid items */
+}

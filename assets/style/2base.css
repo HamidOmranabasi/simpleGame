@@ -1,9 +1,10 @@
+/* Set the background color of the body using a CSS variable */
 body {
-    background-color: var(--primary-bg-color);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
+    background-color: var(--primary-bg-color); /* Using a CSS variable for background color */
+    display: flex;                             /* Use Flexbox layout */
+    flex-direction: column;                    /* Arrange children in a column */
+    gap: 20px;                                 /* Add spacing between children */
+    justify-content: center;                   /* Center children vertically */
+    align-items: center;                       /* Center children horizontally */
+    padding: 15px 0;                           /* Add padding to the top and bottom of the body */
 }

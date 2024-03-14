@@ -1,48 +1,52 @@
+/* Media queries for responsive layout */
+/* Adjustments for screens with a maximum width of 768px */
 @media (max-width: 768px) {
     #img-container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* Adjust grid columns for smaller screens */
     }
     .card img {
-        width:  60px;
-        height: 60px;
+        width: 60px; /* Decrease image width for smaller screens */
+        height: 60px; /* Decrease image height for smaller screens */
     }
-
     #win {
-        transform: translateY(-350px) scale(.5);
+        transform: translateY(-350px) scale(.5); /* Adjust position and scale for the win box */
     }
-  }
-
-  @media (min-width: 768px) {
+}
+/*----------------------min-width: 768px-------------------------*/
+/* Adjustments for screens with a minimum width of 768px */
+@media (min-width: 768px) {
     #img-container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* Adjust grid columns for medium-sized screens */
     }
     .card img {
-        width: 150px;
-        height: 150px;
+        width: 150px;  /* Set image width for medium-sized screens */
+        height: 150px; /* Set image height for medium-sized screens */
     }
     #win {
-        transform: translateY(-500px);
+        transform: translateY(-500px); /* Adjust position for the win box */
     }
-  }
-  
-  @media (min-width: 1200px) {
+}
+/*----------------------min-width: 1200px-------------------------*/
+/* Adjustments for screens with a minimum width of 1200px */
+@media (min-width: 1200px) {
     #img-container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* Adjust grid columns for large screens */
     }
     .card img {
-        width: 200px;
-        height: 200px;
+        width: 200px;  /* Set image width for large screens */
+        height: 200px; /* Set image height for large screens */
     }
     #win {
-        transform: translateY(-700px);
+        transform: translateY(-700px); /* Adjust position for the win box */
     }
-  }
-  
-  @media (min-width: 1600px) {
+}
+/*----------------------min-width: 1600px-------------------------*/
+/* Adjustments for screens with a minimum width of 1600px */
+@media (min-width: 1600px) {
     #img-container {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(8, 1fr); /* Adjust grid columns for extra-large screens */
     }
     #win {
-        transform: translateY(-400px);
+        transform: translateY(-400px); /* Adjust position for the win box */
     }
-  }
+}

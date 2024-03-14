@@ -1,4 +1,5 @@
+/* Styling for the countdown element */
 #countDown {
-    color: var(--countdown-color);
-    font-size: 3em;
-  }
+  color: var(--countdown-color); /* Set the text color using a CSS variable */
+  font-size: 3em;                /* Set the font size of the countdown text */
+}
